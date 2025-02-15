@@ -1,0 +1,113 @@
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure body and html take up full viewport height */
+    overflow-x: hidden; /* Prevent scrolling */
+    font-family: '', serif;
+    font-weight: 700;}
+
+
+.grid_wrapper {
+    border: 0x;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, 500px);
+}
+
+.grid_wrapper > div {
+    /*background-color: lightblue;  For debugging purposes */
+    padding: 10x;
+    text-align: center; /* Center the text */
+    background-color: white;
+    border: 1px solid #ccc; /* Optional: border for visibility */
+}
+
+.grid_wrapper > h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+/* Media query for narrow screens */
+@media (max-width: 900px) {
+    .grid_wrapper {
+        grid-template-columns: repeat(1, 1fr); /* Switch to a single column */
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 4vw;
+    color: white
+}
+
+.portfolio_title {
+    margin: 0; /* Remove default margins */
+    margin-bottom: 20px;
+    padding: 0; /* Remove default padding */ 
+    text-align: center;
+}
+.portfolio {
+    background-color: #1a1a1a;
+}
+.photo {
+    background: lightblue;
+    /*padding: 30px;*/
+    position: relative; /* Necessary for positioning the overlay */
+    overflow: hidden; /* Hide any overflow */
+}
+.photo img {
+    transition: opacity 0.3s ease;
+    width: 100%;
+}
+.photo:hover img {
+    opacity: 0.6;
+}
+.photo:hover::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: attr(data-title);
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent for contrast */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between links */
+  }
+  
+  .footer-nav li {
+    display: inline;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #ffd700; /* Warm golden yellow on hover */
+  }
+
