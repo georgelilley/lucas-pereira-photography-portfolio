@@ -1,0 +1,192 @@
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.contact{
+    display: flex; /* Activate Flexbox */
+    flex-direction: column;
+    justify-content: center; /* Centre horizontally */
+    align-items: center; /* Centre vertically */
+    background-image: url('../images/juli-kosolapova-PTi0xe9lPFM-unsplash.jpg'); /* Set the image as background */
+    background-size: cover;
+    padding: 20px;
+    min-height: 96vh;
+}
+
+.text_box{
+    /*margin-top: 30px; I think the issue may be related to the translations below*/
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4); /* Semi-opaque white */
+    max-width: 60%;
+    font-family: Montserrat;
+    color: black;
+    /*padding: 2rem;*/ 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro_text{
+    margin-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+legend {
+    font-weight: bold;
+    color: #555;
+  }
+
+fieldset{
+    border: none;
+    /*padding: 20px;*/
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+/*.details_map_grid{
+    /*margin-top: 30px;*/
+    /*border: solid;
+}*/
+
+
+img{
+    width: 25px;
+    height: 25px; /* Force all images to have a consistent size */
+    object-fit: cover; /* Ensures the image fills the box while maintaining aspect ratio */
+    vertical-align: middle;
+    /*object-fit: contain;
+    object-position: center;
+    background: #fff; /* Optional, to debug transparent padding issues */
+}
+
+h1{
+    /*margin-top: 100px;*/
+    font-size: 70px;;
+}
+
+h3{
+    font-weight: 750;
+}
+
+input{
+    font-size: 120%;
+    border: 1px solid #bdbdbd;
+    border-radius: 15%;
+    margin-top: 1%;
+}
+
+ul{
+    margin-top: 0%;
+}
+
+textarea{
+    font-size: 120%;
+    border: 1px solid #bdbdbd;
+}
+
+.submit{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 750;
+    /*margin-top: 2%;
+    margin-bottom: 2%;*/
+    color: #444444;
+    text-shadow: 0px 1px 1px #ffffff;
+    border-bottom: 2px solid #b2b2b2;
+    /*border-right: 1px solid #b2b2b2;*/
+}
+
+.submit:hover {
+    color: #333333;
+    border: 1px solid #a4a4a4;
+    border-top: 2px solid #b2b2b2
+}
+
+.details_map_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+}
+
+ul {
+    display: inline-block;
+    font-size: 20px;
+    /*padding: 0;*/
+    list-style-position: inside;
+    text-align: left;
+}
+
+a {
+    color: black; /* or any colour you prefer */
+    text-decoration: none;
+}
+  
+a:visited {
+    color: black; /* keep it the same as unvisited links */
+}
+  
+a:hover {
+    color: grey; /* optional hover effect */
+    text-decoration: underline;
+}
+  
+a:active {
+    color: black;
+}
+  
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent for contrast */
+    color: white;
+    text-align: center;
+    padding: 7.5px 0;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between links */
+  }
+  
+  .footer-nav li {
+    display: inline;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #ffd700; /* Warm golden yellow on hover */
+  }
+
+@media (max-width: 1050px) {
+
+    .text_box{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1550px) {
+
+    .details_map_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
