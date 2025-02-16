@@ -1,6 +1,9 @@
 html, body {
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .contact{
@@ -31,11 +34,11 @@ html, body {
     padding-left: 2%;
     padding-right: 2%;
 }
-
+    
 legend {
     font-weight: bold;
     color: #555;
-  }
+}
 
 fieldset{
     border: none;
@@ -54,7 +57,6 @@ fieldset{
     /*margin-top: 30px;*/
     /*border: solid;
 }*/
-
 
 img{
     width: 25px;
@@ -116,7 +118,9 @@ textarea{
     margin-bottom: 3%;
 }
 
-ul {
+/* ul causing the issue here.*/
+
+.details_map_grid ul {
     display: inline-block;
     font-size: 20px;
     /*padding: 0;*/
@@ -146,10 +150,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent for contrast */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent for contrast */
+    font-weight: 700;
     color: white;
-    text-align: center;
-    padding: 7.5px 0;
+    text-align: right;
+    padding: 10px 0;
+    display: flex;
+    text-align: right;
+    justify-content: center;
   }
   
   .footer-nav {

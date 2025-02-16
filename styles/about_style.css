@@ -1,22 +1,17 @@
 html, body {
-   /*.background: linear-gradient(to bottom, f4f4f4, #ffffff);*/
     background-color: #f9f9f9;
-    /*height: 100%;*/
     margin: 0;
-    /*display: flex;
-    flex-direction: column;*/
     padding: 0;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .about{
   display: flex; /* Activate Flexbox */
   flex-direction: column;
   justify-content: center; /* Centre horizontally */
-  /*align-items: center; /* Centre vertically */
   background-image: url('../images/juli-kosolapova-PTi0xe9lPFM-unsplash-bw.jpg'); /* Set the image as background */
   background-size: cover;
-  /*padding: 20px;*/
-  /*   min-height: 96vh;*/
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: normal;
@@ -35,7 +30,6 @@ html, body {
 }
 
 .box {
-  /*border: 2px dotted rgb(96 139 168);*/
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -130,14 +124,19 @@ h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.footer_div {
+footer {
     position: fixed;
     bottom: 0;
-    width: 100vw;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent for contrast */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent for contrast */
+    font-weight: 700;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    text-align: right;
+    padding: 10px 0;
+    display: flex;
+    text-align: right;
+    justify-content: center;
   }
   
   .footer-nav {
