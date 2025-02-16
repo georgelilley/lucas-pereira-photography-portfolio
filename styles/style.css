@@ -2,7 +2,7 @@ html, body {
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
     height: 100%; /* Ensure body and html take up full viewport height */
-    overflow: hidden; /* Prevent scrolling */
+    
 }
 .hero{
     display: flex; /* Activate Flexbox */
@@ -54,35 +54,39 @@ p {
     color: #FF7043
 }
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent for contrast */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .footer-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between links */
-  }
-  
-  .footer-nav li {
-    display: inline;
-  }
-  
-  .footer-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-nav a:hover {
-    color: #ffd700; /* Warm golden yellow on hover */
-  }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent for contrast */
+  font-weight: 700;
+  color: white;
+  text-align: right;
+  padding: 10px 0;
+  display: flex;
+  text-align: right;
+  justify-content: center;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between links */
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ffd700; /* Warm golden yellow on hover */
+}

@@ -8,6 +8,7 @@ html, body {
 
 
 .grid_wrapper {
+    background-color: #1a1a1a;
     border: 0x;
     width: 100vw;
     display: grid;
@@ -17,7 +18,6 @@ html, body {
 }
 
 .grid_wrapper > div {
-    /*background-color: lightblue;  For debugging purposes */
     padding: 10x;
     text-align: center; /* Center the text */
     background-color: white;
@@ -28,6 +28,10 @@ html, body {
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
+
+
+
+
 
 /* Media query for narrow screens */
 @media (max-width: 900px) {
@@ -48,18 +52,8 @@ h1 {
     color: white
 }
 
-.portfolio_title {
-    margin: 0; /* Remove default margins */
-    margin-bottom: 20px;
-    padding: 0; /* Remove default padding */ 
-    text-align: center;
-}
-.portfolio {
-    background-color: #1a1a1a;
-}
 .photo {
     background: lightblue;
-    /*padding: 30px;*/
     position: relative; /* Necessary for positioning the overlay */
     overflow: hidden; /* Hide any overflow */
 }
@@ -79,12 +73,16 @@ h1 {
 }
 footer {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent for contrast */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent for contrast */
+    font-weight: 700;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 10px 0;
+    display: flex;
+    text-align: right;
+    justify-content: center;
   }
   
   .footer-nav {
@@ -110,4 +108,3 @@ footer {
   .footer-nav a:hover {
     color: #ffd700; /* Warm golden yellow on hover */
   }
-
